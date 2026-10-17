@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+    <DefaultFont>Microsoft YaHei UI, 9pt</DefaultFont>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Threading.RateLimiting" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Icons\*.svg" />
+  </ItemGroup>
+
+  <!-- 扩展包必须与 Downloader.exe 同目录：程序按它判定接管是否可用，Chrome 也从这里装 -->
+  <ItemGroup>
+    <None Include="..\..\extension\DownloaderHandoff.crx" Link="DownloaderHandoff.crx" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>

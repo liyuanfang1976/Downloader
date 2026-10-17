@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Downloader 接管",
+  "version": "1.0.0",
+  "description": "把浏览器下载交给本机 Downloader 接管",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwnZLrMAT99VaqU49y3GsagtUVvV72qFAg426GT//VKvFiBAJnaHl4V9aNmiSvpxPc8zDjKASTa7Fd/Kcu5h21PCvnXaYEG02fcMfsJP1Az3lUPP6ABuWIYyfjHlNMULPs1bTIP8s1wKFT4X4A3pWIKCyq/mAgyOm/wUvl8HiJgNx61JroYbU91RywLqO7eYM82Ak/u5hqwZ0V0MSt6c6/idATozzpdZd8SSOEjcomqd/jr9p6HOvEQEAduKPamz0XbqLFvn8VVc82uAiMnY0eZwr4yfbCmy210wDI4F5sjW/n0mYpM7buNHUODl23VAtZ0yvWu8EiSkSAb7djKBCcQIDAQAB",
+  "permissions": ["downloads", "cookies", "nativeMessaging"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Downloader 接管"
+  }
+}
