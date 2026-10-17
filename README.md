@@ -73,8 +73,6 @@ Downloader 是一款 Windows 上解压即用的多线程下载器：分块加速
   ```
 - 发布目录：运行 `tools\publish.ps1`，产物在 `dist\Downloader\`。
 - 扩展改动后重新打包：`tools\pack-extension.ps1`（记得调大 `manifest.json` 的 version，否则 Chrome 不会替换旧版）。
-- `extension\DownloaderHandoff.pem` 是扩展签名私钥：**丢了它扩展 ID 就会变**，所有依赖该 ID 的注册都要重来；不要把它放进分发包。
-
 ## 许可证
 
 本项目基于 [MIT](LICENSE) 许可证发布。
