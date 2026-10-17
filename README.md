@@ -2,7 +2,7 @@
 
 Downloader 是一款 Windows 上解压即用的多线程下载器：分块加速、断点续传、可限速，支持 Chrome 下载接管（自动带上 Referer 与 Cookie）、重复链接多种处理策略、SHA-256 校验，基本的常用功能几乎都涵盖了，所有数据都留在程序自己的目录里。
 
-![Downloader 主界面](1.png)
+![Downloader 主界面](1.jpg)
 
 ## 亮点
 
